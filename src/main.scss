@@ -2,8 +2,28 @@
 @import "../node_modules/compass-mixins/lib/compass/css3";
 
 $color-gray: #d1d1d1;
-$color-green: #00b38a;
+$color-green: rgb(110, 179, 200);
+$color-pink: rgb(231, 156, 174);
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+
+.hl{
+  color: $color-pink;
+}
+
+.hl-title {
+  font-size: 18px;
+  color: $color-green;
+}
+
+.hl-strong {
+  font-size: 16px;
+  color: $color-green;
+}
+
+.info li {
+  margin: 8px 0;
+}
+
 
 * {
   @include box-sizing(border-box);
@@ -143,7 +163,7 @@ a {
     }
     h2 {
       display: inline-block;
-      font-size: 24px;
+      font-size: 28px;
       @media screen and (max-width: 720px) {
         border-top: 1px solid darken($color-green, 2%);
         margin: 5px auto 0;
@@ -235,7 +255,7 @@ a {
     ul {
       li {
         margin-top: 8px;
-        list-style: square inside;
+        list-style: circle inside;
       }
     }
 
@@ -277,11 +297,11 @@ a {
   }
   .item-hd {
     position: relative;
-    padding: 10px 0 5px;
+    padding: 8px 0 5px;
     line-height: 20px;
-    overflow: hidden;
+    // overflow: hidden;
     font-weight: 500;
-    min-height: 30px;
+    min-height: 40px;
     .item-time {
       display: inline-block;
       float: left;
@@ -343,12 +363,12 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 0 5px;
+  padding: 3px 6px;
   border: 1px solid $color-green;
   border-radius: 3px;
   color: $color-green;
   font-family: Menlo, $font-family;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   text-align: center;
   &:hover {
