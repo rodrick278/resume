@@ -96,7 +96,7 @@ module.exports = {
     }),
     new EndWebpackPlugin(async () => {
       // 自定义域名
-      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'https://messiahhh.github.io/');
+      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'https://messiahhh.github.io/resume');
 
       await publishGhPages();
 
