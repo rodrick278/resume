@@ -23,7 +23,9 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 .info li {
   margin: 8px 0;
 }
-
+ul {
+  margin-left: 4px;
+}
 
 
 * {
@@ -181,6 +183,7 @@ a {
     text-align: right;
     padding-right: 5px;
     ul {
+
       margin: 8px 0 4px;
       @media screen and (max-width: 720px) {
         text-align: center;
